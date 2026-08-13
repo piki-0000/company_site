@@ -1,0 +1,9 @@
+<h2>お問い合わせ内容</h2>
+
+<p>お名前: <%= @contact.name %></p>
+<p>メールアドレス: <%= @contact.email %></p>
+<p>電話番号: <%= @contact.phone.presence || "未入力" %></p>
+<p>会社名: <%= @contact.company.presence || "未入力" %></p>
+
+<p>お問い合わせ内容:</p>
+<%= simple_format(@contact.message) %>
